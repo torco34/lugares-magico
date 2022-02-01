@@ -1,0 +1,134 @@
+*{
+	margin: 0px;
+}
+
+/*
+.primer {
+	width: 100%;
+	background-color: #000;
+	height: 55px;
+	padding:0px;
+
+}
+/*
+.primer, a h1{
+	color:#fff;
+	font-family: 'Anton', sans-serif;
+}
+
+.seguda{
+	/*position: absolute;
+	background: #ccc;
+	display: none;
+	height:50px;
+
+}
+
+
+.seguda a {
+	/*color:#000;
+	background-position: center;
+	
+}
+
+
+.seguda span {
+	color:red;
+	
+}
+
+
+.seguda  hover: a {/*no funciona
+	color:red;
+	background-position: center;
+	
+}
+
+
+.trecer{
+	height: 70px;
+	display: inline-block;    
+
+}
+
+
+
+.trecer h4  {
+	position: relative;
+	color:red;
+	font-size: 30px;
+	margin:10px;
+	right: 70px;
+	font-family: 'Anton', sans-serif;
+
+}
+
+
+
+.trecer h3 {
+	position: relative;
+	color:#fff;
+	margin: 10px;
+	background: red;
+	width: 70px;
+	height: 40px;
+	left: 40px;
+	font-family: 'Anton', sans-serif;
+}
+
+.trecer span  {
+	position: relative;
+	background:#fff;
+	color:red;
+	font-size: 40px;
+	top:20px;
+
+	font-family: 'Anton', sans-serif;
+}
+
+
+.trecer p  {
+	position: relative;
+	background:#fff;
+	color:;
+	font-size: 15px;
+	top:25px;
+	left: 250px;
+	font-family: 'Anton', sans-serif;
+}
+
+
+
+.cuarto {
+	position: relative;
+    background:#EB916C ;
+    width: 100%;  
+    color:#fff;
+     border: 1px solid #ccc;
+      height:auto;
+}
+
+
+.cuarto span {
+	width: 70px;
+	height: 40px;
+	background: #A1380D;
+	
+	font-size: 40px;
+	color:#fff;
+}
+
+
+
+.cuarto a {
+	position: relative;
+	display: inline-block;  
+
+    color:#fff;
+    margin:10px;
+}  
+   
+
+body{
+	background:red;
+}

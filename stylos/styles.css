@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 1em;
+  font-family: "Girassol", cursive;
+}
+
+.containerHeader {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.containerHeader .header {
+  padding: 10px;
+  background: #3cc7c5;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-column: span 2;
+}
+
+.containerHeader .formInput {
+  background: #3cc7c5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* grid-column: span 2; */
+}
+
+.containerHeader .nav {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  border: solid 1px #3fd0f8;
+  font-size: 1.7rem;
+}
+
+/* .containerHeader > * {
+    border: solid 1px #3b5998;
+  } */
+
+.logo {
+  position: relative;
+  padding: 1rem;
+  left: 7rem;
+  color: #1c6d6c;
+  background: #fff;
+  font-size: cal(0.5rem + 0.1em);
+  font-family: "Girassol", cursive;
+  max-width: 6rem;
+  height: 6rem;
+  display: grid;
+  align-items: center;
+  border: solid 3px #c13584;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.logo p {
+  color: #c13584;
+  margin-left: 10px;
+}
+.imgBoton img {
+  position: relative;
+  width: 4rem;
+  display: block;
+}
+
+/* header azul  TERMINA*/
+
+/* HEADER LISTA */
+.nav ul {
+  display: flex;
+}
+.nav ul li {
+  list-style: none;
+  padding-left: 20px;
+}
+.nav ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: #c13584;
+  font-family: "Girassol", cursive;
+}
+.nav a.activo {
+  font-family: "Girassol", cursive;
+  color: #3cc7c5;
+}
+.nav a:hover {
+  color: #3cc7c5;
+}
+
+/* HEADER LISTA */
+
+/*trabajo congrid*/
+
+.grid {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  border: solid 1px #c13584;
+  transition: opacity 0.5s linear 1s;
+}
+
+.grid.imgenes-cargadas {
+  opacity: 1;
+  border: solid 1px #daced5;
+}
+
+.grid .item {
+  position: absolute;
+  display: block;
+  padding: 0;
+  margin: 10px;
+  border: solid 1px #35c16f;
+  width: calc(33.33333% - 20px);
+}
+
+.grid.item-contenido {
+  position: relative;
+}
+
+.grid .item img {
+  width: 100%;
+  height: 20vh;
+  cursor: pointer;
+  vertical-align: top;
+}
+
+/*overlay*/
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.overlay.activo {
+  display: flex;
+}
+
+.overlay .descripcion {
+  display: block;
+  background: #fff;
+  padding: 10px;
+  text-align: center;
+  margin-top: 5px;
+  border-radius: 6px;
+  max-width: 50%;
+}
+
+.contenedor-img {
+  position: relative;
+}
+
+.contenedor-img button {
+  background: none;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: -20px;
+  top: -20px;
+}
+
+/*redes sociales*/
+
+/*footer*/
+
+.contenedor-redes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: span 2;
+  background: rgb(46, 40, 40);
+}
+
+.redes-sociales {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 20px;
+  color: #3cc7c5;
+}
+
+.container-icon a img {
+  display: block;
+  color: #fff;
+  margin: 30px;
+  text-align: center;
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+  background: rgb(247, 243, 243);
+  transition: 0.3s ease all;
+}
+
+.container-icon {
+  justify-content: center;
+  margin: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Girassol", cursive;
+}
+.parrafo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-family: "Girassol", cursive;
+  color: #3cc7c5;
+}
+
+footer .container-icon .instagram {
+  background: #ffff;
+}
+footer .container-icon .facebook {
+  background: #3b5998;
+}
+footer .container-icon .twitter {
+  background: #3fd0f8;
+}
+
+footer .container-icon a span {
+  font-size: 25px;
+  line-height: 60px;
+}
+
+footer .container-icon:hover a {
+  animation: icono 0.5s ease;
+}
+
+@keyframes icono {
+  from {
+    transform: rotate3d(0, 0, 0, 0);
+  }
+  to {
+    transform: rotate3d(0, 1, 9, 360deg);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .containerHeader .header {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  .containerHeader .formInput {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  .containerHeader .nav ul {
+    flex-direction: column;
+    width: 100%;
+    height: 20rem;
+    display: grid;
+    justify-content: center;
+    border: solid 1px sienna;
+    /* display: none; */
+    /* z-index: 1; */
+  }
+
+  .grid .item {
+    width: calc(50% - 20px);
+    /* grid-template-columns: 1fr; */
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  .imgBoton img {
+    position: relative;
+    display: block;
+  }
+  .contenedor-redes .redes-sociales {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  .container-icon a img {
+    margin: 15px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .parrafo {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    font-size: ;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .grid .item {
+    width: calc(100% - 0px);
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+  .contenedor-redes .container-icon a img {
+    flex-direction: column;
+    margin: 0;
+    display: grid;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+  }
+}
